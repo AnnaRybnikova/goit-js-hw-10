@@ -1,2 +1,83 @@
 @import url('styles.css');
 @import url('iziToast.css');
+
+.container {
+    padding: 36px 156px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.form > label {
+    margin-bottom: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input[type="number"] {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    
+    width: 360px;
+    height: 40px;
+
+    padding: 8px 16px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input[type="number"]:hover {
+    border-color: #000;
+}
+
+input[type="number"]:focus {
+    border-color: #4e75ff;
+}
+
+fieldset {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 48px;
+
+    justify-content: center;
+
+    padding: 24px 28px 8px 28px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    
+    width: 360px;
+    height: 78px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+fieldset:hover {
+    border-color: #000;
+}
+
+fieldset:has(input[type='radio']:checked) {
+    border-color: #000;
+}
+
+.form > button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+
+    font-weight: 500;
+    color: #fff;
+
+    background-color: #4e75ff;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form > button:hover {
+    background-color: #6c8cff;
+}
