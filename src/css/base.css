@@ -36,3 +36,7 @@ body {
 main {
     flex-grow: 1;
 }
+
+.back-btn {
+    position: fixed;
+}

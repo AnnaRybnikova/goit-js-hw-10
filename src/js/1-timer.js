@@ -18,11 +18,17 @@ const options = {
     time_24hr: true,
     defaultDate: new Date(),
     minuteIncrement: 1,
+    locale: {
+        firstDayOfWeek: 1
+    },
     onClose(selectedDates) {
         if (selectedDates[0] < Date.now()) {
             iziToast.error({
                 title: 'Error',
                 message: 'Please choose a date in the future',
+                class: 'custom-noty error',
+                position: 'topRight',
+                iconUrl: "./img/error.svg",
             });
             startBtnEl.setAttribute("disabled", true);
         } else if (selectedDates[0] > Date.now()) {

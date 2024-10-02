@@ -1,0 +1,29 @@
+.flatpickr-calendar.hasTime {
+    margin-top: 8px;
+    width: 308px;
+    
+    background-color: #f5f5f5;
+}
+
+.dayContainer > .flatpickr-day.today.selected {
+    color: inherit;
+    background-color: transparent;
+    border-color: #4e75ff;
+}
+
+.dayContainer > .flatpickr-day:hover {
+    border-color: #c1c1c1;
+    background-color: #c1c1c1;
+}
+
+.dayContainer > .flatpickr-day.selected {
+    color: #fff;
+    border-color: #4e75ff;
+    background-color: #4e75ff;
+}
+
+.dayContainer>.flatpickr-day.selected:hover {
+    color: #fff;
+    border-color: #4e75ff;
+    background-color: #4e75ff;
+}
