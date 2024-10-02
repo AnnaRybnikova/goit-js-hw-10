@@ -19,6 +19,18 @@
     background: url(../img/close.svg) no-repeat 50% 50% !important;
 }
 
+.custom-noty.success {
+    background-color: #59a10d !important;
+}
+
 .custom-noty.error {
     background-color: #ef4040 !important;
+}
+
+.custom-noty.warning {
+    background-color: #ffa000 !important;
+}
+
+.custom-noty.info {
+    background-color: #09f !important;
 }
