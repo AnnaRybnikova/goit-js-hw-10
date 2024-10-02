@@ -39,7 +39,7 @@ function createOkNotification(notyMessage) {
         message: notyMessage,
         class: 'custom-noty success',
         position: 'topRight',
-        iconUrl: "../img/success.svg",
+        iconUrl: "./img/success.svg",
     });
 }
 
@@ -49,7 +49,7 @@ function createErrorNotification(notyMessage) {
         message: notyMessage,
         class: 'custom-noty error',
         position: 'topRight',
-        iconUrl: "../img/error.svg",
+        iconUrl: "./img/error.svg",
     });
 }
 
@@ -59,7 +59,7 @@ function createCautionNotification(notyMessage) {
         message: notyMessage,
         class: 'custom-noty warning',
         position: 'topRight',
-        iconUrl: "../img/warning.svg",
+        iconUrl: "./img/warning.svg",
     });
 }
 
@@ -69,6 +69,6 @@ function createInfoNotification(notyMessage) {
         message: notyMessage,
         class: 'custom-noty info',
         position: 'topRight',
-        iconUrl: "../img/info.svg",
+        iconUrl: "./img/info.svg",
     });
 }
