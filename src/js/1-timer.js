@@ -28,7 +28,7 @@ const options = {
                 message: 'Please choose a date in the future',
                 class: 'custom-noty error',
                 position: 'topRight',
-                iconUrl: "./src/img/error.svg",
+                iconUrl: "./img/error.svg",
             });
             startBtnEl.setAttribute("disabled", true);
         } else if (selectedDates[0] > Date.now()) {
