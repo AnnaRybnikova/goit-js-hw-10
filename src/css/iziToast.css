@@ -15,6 +15,10 @@
     font-weight: 700 !important;
 }
 
+.iziToast > .iziToast-close {
+    background: url(../img/close.svg) no-repeat 50% 50% !important;
+}
+
 .custom-noty.error {
     background-color: #ef4040 !important;
 }
