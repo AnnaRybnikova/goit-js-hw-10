@@ -1,5 +1,9 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
+import successIconUrl from "../img/success.svg";
+import errorIconUrl from "../img/error.svg";
+import warningIconUrl from "../img/warning.svg";
+import infoIconUrl from "../img/info.svg";
 
 const formEl = document.querySelector('.form');
 const delayInputEl = document.querySelector('input[name="delay"]');
@@ -39,7 +43,7 @@ function createOkNotification(notyMessage) {
         message: notyMessage,
         class: 'custom-noty success',
         position: 'topRight',
-        iconUrl: "../img/success.svg",
+        iconUrl: successIconUrl,
     });
 }
 
@@ -49,7 +53,7 @@ function createErrorNotification(notyMessage) {
         message: notyMessage,
         class: 'custom-noty error',
         position: 'topRight',
-        iconUrl: "../img/error.svg",
+        iconUrl: errorIconUrl,
     });
 }
 
@@ -59,7 +63,7 @@ function createCautionNotification(notyMessage) {
         message: notyMessage,
         class: 'custom-noty warning',
         position: 'topRight',
-        iconUrl: "../img/warning.svg",
+        iconUrl: warningIconUrl,
     });
 }
 
@@ -69,6 +73,6 @@ function createInfoNotification(notyMessage) {
         message: notyMessage,
         class: 'custom-noty info',
         position: 'topRight',
-        iconUrl: "../img/info.svg",
+        iconUrl: infoIconUrl,
     });
 }

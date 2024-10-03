@@ -2,7 +2,7 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
-
+import errorIconUrl from "../img/error.svg";
 
 let userSelectedDate;
 
@@ -28,7 +28,7 @@ const options = {
                 message: 'Please choose a date in the future',
                 class: 'custom-noty error',
                 position: 'topRight',
-                iconUrl: "../img/error.svg",
+                iconUrl: errorIconUrl,
             });
             startBtnEl.setAttribute("disabled", true);
         } else if (selectedDates[0] > Date.now()) {
